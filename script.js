@@ -1,8 +1,8 @@
+centerBouncer()
 const bouncer = document.getElementById('bouncer');
 
 let vx = 0;
 let vy = 0;
-
 
 let x = (window.innerWidth - bouncer.clientWidth) / 2;
 let y = window.innerHeight - bouncer.clientHeight - 20;
