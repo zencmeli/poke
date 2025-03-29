@@ -32,6 +32,10 @@ function move() {
   // 每次移動後稍微減慢速度（模擬摩擦力）
   vx *= 0.5;
   vy *= 0.5;
+
+  // 速度很小，就直接設為 0（避免微動）
+  if (Math.abs(vx) < 0.1) vx = 0;
+  if (Math.abs(vy) < 0.1) vy = 0;
   
   requestAnimationFrame(move);
 }
