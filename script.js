@@ -1,15 +1,3 @@
-
-centerBouncer();
-
-let x, y, vx = 0, vy = 0;
-
-function centerBouncer() {
-  x = (window.innerWidth - bouncer.clientWidth) / 2;
-  y = window.innerHeight - bouncer.clientHeight - 20;
-
-  bouncer.style.left = x + 'px';
-  bouncer.style.top = y + 'px';
-}
 const bouncer = document.getElementById('bouncer');
 
 let vx = 0;
@@ -49,4 +37,15 @@ function move() {
   requestAnimationFrame(move);
 }
 
+let x, y, vx = 0, vy = 0;
+
+function centerBouncer() {
+  x = (window.innerWidth - bouncer.clientWidth) / 2;
+  y = window.innerHeight - bouncer.clientHeight - 20;
+
+  bouncer.style.left = x + 'px';
+  bouncer.style.top = y + 'px';
+}
+
+centerBouncer();
 move();
