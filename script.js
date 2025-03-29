@@ -28,12 +28,12 @@ function move() {
 
   bouncer.style.left = x + 'px';
   bouncer.style.top = y + 'px';
-
-  requestAnimationFrame(move);
-}
-
-move(
+  
   // 每次移動後稍微減慢速度（模擬摩擦力）
   vx *= 0.5;
   vy *= 0.5;
-);
+  
+  requestAnimationFrame(move);
+}
+
+move();
