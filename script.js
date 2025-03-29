@@ -36,12 +36,12 @@ function move() {
   bouncer.style.top = y + 'px';
   
   // slow down
-  vx *= 0.95;
-  vy *= 0.95;
+  vx *= 0.98;
+  vy *= 0.98;
 
   // when stop
-  if (Math.abs(vx) < 0.5) vx = 0;
-  if (Math.abs(vy) < 0.5) vy = 0;
+  if (Math.abs(vx) < 0.2) vx = 0;
+  if (Math.abs(vy) < 0.2) vy = 0;
   
   console.log(vx, vy);
 
