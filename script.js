@@ -5,8 +5,8 @@ let vy = 0;
 
 bouncer.addEventListener('click', () => {
   // 隨機彈跳方向與速度
-  vx = (Math.random() - 0.5) * 30;
-  vy = (Math.random() - 0.5) * 30;
+  vx = (Math.random() - 0.5) * 60;
+  vy = (Math.random() - 0.5) * 60;
 });
 
 function move() {
