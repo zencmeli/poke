@@ -1,6 +1,6 @@
-const bouncer = document.getElementById('bouncer');
+let x, y, vx = 0, vy = 0;
 
-let x, y;
+const bouncer = document.getElementById('bouncer');
 
 function centerBouncer() {
   x = (window.innerWidth - bouncer.clientWidth) / 2;
