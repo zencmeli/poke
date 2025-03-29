@@ -19,6 +19,8 @@ function move() {
   let y = bouncer.offsetTop + vy;
 
   // 撞到邊界就反彈
+  if ((x < 0 || x > maxX) && Math.abs(vx) > 0.1) vx = -vx;
+  if ((y < 0 || y > maxY) && Math.abs(vy) > 0.1) vy = -vy;
   if (Math.abs(vx) < 0.1) {
     vx = 0;
   }
