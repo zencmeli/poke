@@ -5,8 +5,8 @@ let vy = 0;
 
 bouncer.addEventListener('click', () => {
   // 隨機彈跳方向與速度
-  vx = (Math.random() - 0.5) * 20;
-  vy = (Math.random() - 0.5) * 20;
+  vx = (Math.random() - 0.5) * 30;
+  vy = (Math.random() - 0.5) * 30;
 });
 
 function move() {
@@ -34,6 +34,6 @@ function move() {
 
 move(
   // 每次移動後稍微減慢速度（模擬摩擦力）
-  vx *= 0.9;
-  vy *= 0.9;
+  vx *= 0.5;
+  vy *= 0.5;
 );
