@@ -4,13 +4,8 @@ let vx = 0;
 let vy = 0;
 
 
-function centerBouncer() {
-  x = (window.innerWidth - bouncer.clientWidth) / 2;
-  y = window.innerHeight - bouncer.clientHeight - 20;
-
-  bouncer.style.left = x + 'px';
-  bouncer.style.top = y + 'px';
-}
+let x = (window.innerWidth - bouncer.clientWidth) / 2;
+let y = window.innerHeight - bouncer.clientHeight - 20;
 
 bouncer.style.left = x + 'px';
 bouncer.style.top = y + 'px';
@@ -47,7 +42,6 @@ function move() {
   console.log(vx, vy);
 
   requestAnimationFrame(move);
-  centerBouncer();
 }
 
 move();
