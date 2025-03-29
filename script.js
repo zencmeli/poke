@@ -2,7 +2,7 @@ let x, y, vx = 0, vy = 0;
 
 const bouncy = document.getElementById('bouncy');
 
-function centerBouncy() {
+function centerbouncy() {
   x = (window.innerWidth - bouncy.clientWidth) / 2;
   y = window.innerHeight - bouncy.clientHeight - 20;
 
