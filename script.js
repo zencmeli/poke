@@ -42,6 +42,6 @@ function move() {
 }
 
 window.addEventListener('DOMContentLoaded', () => {
-  centerBouncy();
+  centerbouncy();
   move();
 });
