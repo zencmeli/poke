@@ -37,6 +37,8 @@ function move() {
   if (Math.abs(vx) < 0.1) vx = 0;
   if (Math.abs(vy) < 0.1) vy = 0;
   
+  console.log(vx, vy);
+
   requestAnimationFrame(move);
 }
 
