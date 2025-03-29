@@ -3,22 +3,22 @@ let x, y, vx = 0, vy = 0;
 const bouncy = document.getElementById('bouncy');
 
 function centerBouncy() {
-  x = (window.innerWidth - bouncer.clientWidth) / 2;
-  y = window.innerHeight - bouncer.clientHeight - 20;
+  x = (window.innerWidth - bouncy.clientWidth) / 2;
+  y = window.innerHeight - bouncy.clientHeight - 20;
 
-  bouncer.style.left = x + 'px';
-  bouncer.style.top = y + 'px';
+  bouncy.style.left = x + 'px';
+  bouncy.style.top = y + 'px';
 }
 
-bouncer.addEventListener('click', () => {
+bouncy.addEventListener('click', () => {
   vx = (Math.random() - 0.5) * 60;
   vy = (Math.random() - 0.5) * 60;
 });
 
 function move() {
   const parent = document.getElementById('game-area');
-  const maxX = parent.clientWidth - bouncer.clientWidth;
-  const maxY = parent.clientHeight - bouncer.clientHeight;
+  const maxX = parent.clientWidth - bouncy.clientWidth;
+  const maxY = parent.clientHeight - bouncy.clientHeight;
 
   x += vx;
   y += vy;
@@ -29,8 +29,8 @@ function move() {
   x = Math.max(0, Math.min(x, maxX));
   y = Math.max(0, Math.min(y, maxY));
 
-  bouncer.style.left = x + 'px';
-  bouncer.style.top = y + 'px';
+  bouncy.style.left = x + 'px';
+  bouncy.style.top = y + 'px';
 
   vx *= 0.98;
   vy *= 0.98;
