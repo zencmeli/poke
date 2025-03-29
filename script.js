@@ -3,10 +3,6 @@ const bouncer = document.getElementById('bouncer');
 let vx = 0;
 let vy = 0;
 
-// edit
-let x = 200;
-let y = 200;
-
 bouncer.style.left = x + 'px';
 bouncer.style.top = y + 'px';
 
