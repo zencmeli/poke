@@ -36,8 +36,8 @@ function move() {
   bouncer.style.top = y + 'px';
   
   // 每次移動後稍微減慢速度（模擬摩擦力）
-  vx *= 0.5;
-  vy *= 0.5;
+  vx *= 0.9;
+  vy *= 0.9;
 
   // 速度很小，就直接設為 0（避免微動）
   if (Math.abs(vx) < 0.1) vx = 0;
