@@ -41,5 +41,7 @@ function move() {
   requestAnimationFrame(move);
 }
 
-centerBouncer();
-move();
+window.addEventListener('DOMContentLoaded', () => {
+  centerBouncer();
+  move();
+});
