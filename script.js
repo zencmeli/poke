@@ -1,14 +1,19 @@
-centerBouncer()
+
+centerBouncer();
+
+let x, y, vx = 0, vy = 0;
+
+function centerBouncer() {
+  x = (window.innerWidth - bouncer.clientWidth) / 2;
+  y = window.innerHeight - bouncer.clientHeight - 20;
+
+  bouncer.style.left = x + 'px';
+  bouncer.style.top = y + 'px';
+}
 const bouncer = document.getElementById('bouncer');
 
 let vx = 0;
 let vy = 0;
-
-let x = (window.innerWidth - bouncer.clientWidth) / 2;
-let y = window.innerHeight - bouncer.clientHeight - 20;
-
-bouncer.style.left = x + 'px';
-bouncer.style.top = y + 'px';
 
 bouncer.addEventListener('click', () => {
   // random and speed
