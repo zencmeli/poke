@@ -38,7 +38,9 @@ function move() {
   // 每次移動後稍微減慢速度（模擬摩擦力）
   vx *= 0.95;
   vy *= 0.95;
-
+  
+  if (Math.abs(vx) < 0.5) vx = 0;
+  if (Math.abs(vy) < 0.5) vy = 0;
   
   console.log(vx, vy);
 
