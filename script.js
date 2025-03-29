@@ -21,12 +21,6 @@ function move() {
   // 撞到邊界就反彈
   if ((x < 0 || x > maxX) && Math.abs(vx) > 0.1) vx = -vx;
   if ((y < 0 || y > maxY) && Math.abs(vy) > 0.1) vy = -vy;
-  if (Math.abs(vx) < 0.1) {
-    vx = 0;
-  }
-  if (Math.abs(vy) < 0.1) {
-    vy = 0;
-  }
 
   // 限制位置在畫面內
   x = Math.max(0, Math.min(x, maxX));
